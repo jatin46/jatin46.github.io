@@ -103,3 +103,8 @@ body {
 	width: 150px;
 	height: 150px;
 }
+.col-md-3{
+	display: block;
+	margin:50px;
+	float: left;
+}
