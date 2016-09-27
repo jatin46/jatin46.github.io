@@ -26,12 +26,12 @@ body {
 	
 }
 .panel:hover{
-	
 	transition: 1s;
 	transform: translateY(100px);
 	-webkit-transform: translateY(100px);
 	-webkit-transform:rotateY( -20deg );
 	transform: rotateY( -20deg );
+
 }
 .main_heading{
 	position: fixed;
@@ -43,4 +43,63 @@ body {
 .main_name{
 	font-size: 80px;
 	color: #18ffff;
+}
+.slidepanel {
+	background-color: red;
+  position: fixed;
+  width:100px;
+  left: 0px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.section1{
+	height: 100%;
+	margin-top: 100px;
+	padding-top: 50px;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-bottom: 50px;
+	background-color: white;
+}
+.about_des{
+	font-size:30px;
+	text-align: justify;
+	font-family: "verdana" ;
+	line-height: 150%;
+}
+.section2{
+	padding-top: 50px;
+}
+#sl{
+	height: 100px;
+	width: 100px;
+}
+.pulse {
+	animation-name: pulse;
+	-webkit-animation-name:pulse;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+@keyframes pulse{
+
+0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+50% {
+    transform: scale(1);
+    opacity: 1;
+}
+100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+}
+.s1{
+	width: 150px;
+	height: 150px;
 }
