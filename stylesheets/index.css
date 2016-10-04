@@ -34,8 +34,6 @@ body {
 	-webkit-transform: translateY(100px);
 	-webkit-transform:rotateY( -27deg );
 	transform: rotateY( -27deg );
-
-
 }
 .main_heading{
 	position: fixed;
@@ -92,8 +90,11 @@ body {
 .about_des{
 	font-size:30px;
 	text-align: justify;
-	font-family: "verdana" ;
+	
 	line-height: 150%;
+}
+.font_open{
+	font-family: 'Open Sans', sans-serif ;
 }
 .section2{
 	padding-top: 50px;
@@ -131,10 +132,19 @@ body {
 .s1{
 	width: 150px;
 	height: 150px;
+	margin:10px;
+}
+.row_s{
+	width: 1000px;
+	margin:0px auto;
 }
 .col-md-3{
 	display: block;
-	margin:50px;
+	background-color: white;
+	border-radius: 10px;
+	width: 170px;
+	height: 170px;
+	margin:40px;
 	float: left;
 }
 .section1_right{
