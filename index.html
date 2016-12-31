@@ -4,29 +4,54 @@
 	<title>Jatin Bansal</title>
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/hover.js"></script>
+	<script type="text/javascript" src="javascript/nav.js"></script>
+	<script type="text/javascript" src="javascript/sidebar.js"></script>
 </head>
 <body>
-	<div class="main">
-		<div class="sidepanel">
-			<div class="side_in">
-				<img src="images/myphoto.jpg" class="m_pic">
-				<div class="details">
-					<p class="font_open">Name: Jatin Bansal</p>
-					<p class="font_open">Occupation: Software Developer</p>
-					<p class="font_open">Age: 21</p>
-					<p class="font_open">Contact: 95608-12304</p>
-				</div>
-				<div class="con_ic">
-					<div class="fb_ic">
-						<img src="images/facebook.png">
-					</div>
-					<div class="tw_ic">
-						<img src="images/twitter.png">
-					</div>
-				</div>
-			</div>
+	<div id="mySidenav" class="sidenav">
+	  <div class="img_cotainer">
+	  	<div class="close_btn">
+	  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  	</div>
+	  	<div class="image_below">
+	  		<img src="images/DSC_0010--min.jpg " style="width: 100%; height: 250px;">
+	  	</div>
+	  </div>
+	  <div class="sideimage">
+	  	
+	  	<h2 class="color">Jatin Bansal</h2>
+	  	<div style="text-align: justify;">
+	  		<div class="side_info color"><i class="fa fa-envelope fa-fw"></i>  jatinbansal321@gmail.com</div>
+	  		<div class="side_info color"><i class="fa fa-phone fa-fw"></i>  9560812304</div><hr class="color"><br>
+	  		<div>
+	  			<div class="color side_social"><a href="https://github.com/jatin46/"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a></div>
+	  			<div class="color side_social"><a href="https://www.linkedin.com/in/jatin-bansal-b49b90109"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a></div>
+	  			<div class="color side_social"><a href="https://www.facebook.com/jatin.bansal.319"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></div>
+	  			<div class="color side_social"><a href="https://twitter.com/5e641e4cced0411"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></div>
+	  		</div>
+	  	</div>
+	  </div>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+	
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+	<div id="main">
+		<div class="nav">
+			<ul class="topnav" id="myTopnav">
+	  			<li><a href="#wrapper" onclick="openNav()">&#9776;</a></li>
+				<li><a href="#about" >About</a></li>
+				<li class="icon">
+				    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+	  			</li>
+			</ul>
 		</div>
+	<div class="wrapper">
 		<div class="panel_wrapper">
 
 			<div class="panel">
@@ -36,28 +61,44 @@
 			</div>	
 		</div>
 	</div>
-	<div class="section1">
-		<div class="section1_right"><center><h1 style="font-size:50px; font-family: 'Cabin', sans-serif;">About Me</h1></center>
-		<p class="about_des">I'm a developer,programmer and a designer. I like web development. I'm currently the Joint secretery of the photography and designing club of our college. I like competitive programming and learning new concepts.</p><br>
+	<div class="section1" id="about">
+		<div class="section1_right">
+			<h2 class="aboutme_head">ABOUT ME</h2>
+			<div class="aboutme">
+				I'm a developer,programmer and a designer. I like web development. I'm currently the Joint secretery of the photography and designing club of our college. I like competitive programming and learning new concepts.
+			</div>
 			<div class="links">
-				<h2 style="display:block;">Github link:</h2><a href="https://github.com/jatin46" class="link"><p style="font-family:'Open Sans', sans-serif">https://github.com/jatin46</p></a>
-				<h2>Linkedin link:</h2><a href="https://in.linkedin.com/in/jatin-bansal-b49b90109" class="link"><p style="font-family:'Open Sans', sans-serif">https://in.linkedin.com/in/jatin-bansal-b49b90109</p></a>
+				<h2>Github link:</h2><a href="https://github.com/jatin46" class="link_deco"><p style="font-family:'Open Sans', sans-serif">https://github.com/jatin46</p></a>
+				<h2>Linkedin link:</h2><a href="https://in.linkedin.com/in/jatin-bansal-b49b90109" class="link_deco"><p style="font-family:'Open Sans', sans-serif">https://in.linkedin.com/in/jatin-bansal-b49b90109</p></a>
 			</div>
 		</div>
 	</div>
 	<div class="section2">
-		<center><h1 style="font-size:50px;color:white;font-family: 'Cabin', sans-serif;">Skills</h1></center><br>
+		<div class="skill_head">SKILLS</div>
 		<div class="container">
 			<div class="row_s">
-				<div  class="col-md-3 pulse"><img src="images/c.png" class="s1"></div>
-				<div  class="col-md-3 pulse"><img src="images/c_0.png" class="s1"></div>
-				<div class="col-md-3 pulse"><img src="images/JavaLogo.png" class="s1"></div>
-				<div class="col-md-3 pulse"><img src="images/py.png" class="s1"></div>
-			</div>
-			<div class="row_s">
-				<div class="col-md-3 pulse"><img src="images/js.png"  class="s1"></div>
-				<div class="col-md-3 pulse"><img src="images/html.png" class= "s1"></div>
-				<div class="col-md-3 pulse"><img src="images/css3.png" class= "s1"></div>
+				<div class="skill_block_container">
+					<div class=" loader_1"></div>
+					<div class="loader_lang">C++</div>
+				</div>
+				<div class="skill_block_container">
+					<div class="loader_2"></div>
+					<div class="loader_lang">Java</div>
+				</div>
+				<div class="skill_block_container">
+					<div class="loader_3"></div>
+					<div class="loader_lang">Python</div>
+				</div>
+				<div class="skill_block_container">
+					<div class="loader_4"></div>
+					<div class="loader_lang">JavaScript</div>
+				</div>
+				<div class="skill_block_container">
+					<div class="loader_5"></div>
+					<div class="loader_lang">DS & Algo</div>
+				</div>
+				
+				
 			</div>
 		</div>
 	</div> 
@@ -70,5 +111,8 @@
 			</div>
 		</div>
 	</div>
+	</div>
+	
+
 </body>
 </html>
