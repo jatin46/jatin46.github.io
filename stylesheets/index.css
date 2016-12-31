@@ -1,172 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jatin Bansal</title>
 
-body {
-	background-color: black;
-	margin:0px;
-	padding: 0px;
-}
-.main{
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/hover.js"></script>
+	<script type="text/javascript" src="javascript/nav.js"></script>
+	<script type="text/javascript" src="javascript/sidebar.js"></script>
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+	  <div class="img_cotainer">
+	  	<div class="close_btn">
+	  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  	</div>
+	  	<div class="image_below">
+	  		<img src="images/DSC_0010--min.jpg " style="width: 100%; height: 250px;">
+	  	</div>
+	  </div>
+	  <div class="sideimage">
+	  	
+	  	<h2 class="color">Jatin Bansal</h2>
+	  	<div style="text-align: justify;">
+	  		<div class="side_info color"><i class="fa fa-envelope fa-fw"></i>  jatinbansal321@gmail.com</div>
+	  		<div class="side_info color"><i class="fa fa-phone fa-fw"></i>  9560812304</div><hr class="color"><br>
+	  		<div>
+	  			<div class="color side_social"><a href="https://github.com/jatin46/"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a></div>
+	  			<div class="color side_social"><a href="https://www.linkedin.com/in/jatin-bansal-b49b90109"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a></div>
+	  			<div class="color side_social"><a href="https://www.facebook.com/jatin.bansal.319"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></div>
+	  			<div class="color side_social"><a href="https://twitter.com/5e641e4cced0411"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></div>
+	  		</div>
+	  	</div>
+	  </div>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
 	
-	display: block;
-	margin:0px;
-	padding: 0px;
-	height: 650px;
-	width: 100%;
-}
-.panel_wrapper{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	-webkit-perspective: 600px;
-	perspective: 600px;
-}
-.panel{
-	width: 100%;
-    height: 100%;
-    background-image: url("bg.png");
-	background-color: rgb(66,66,66);
-	position: absolute;
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+	<div id="main">
+		<div class="nav">
+			<ul class="topnav" id="myTopnav">
+	  			<li><a href="#wrapper" onclick="openNav()">&#9776;</a></li>
+				<li><a href="#about" >About</a></li>
+				<li class="icon">
+				    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+	  			</li>
+			</ul>
+		</div>
+	<div class="wrapper">
+		<div class="panel_wrapper">
+
+			<div class="panel">
+				<div class="main_heading">
+					<h1 class="main_name">Jatin Bansal</h1>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="section1" id="about">
+		<div class="section1_right">
+			<h2 class="aboutme_head">ABOUT ME</h2>
+			<div class="aboutme">
+				I'm a developer,programmer and a designer. I like web development. I'm currently the Joint secretery of the photography and designing club of our college. I like competitive programming and learning new concepts.
+			</div>
+			<div class="links">
+				<h2>Github link:</h2><a href="https://github.com/jatin46" class="link_deco"><p style="font-family:'Open Sans', sans-serif">https://github.com/jatin46</p></a>
+				<h2>Linkedin link:</h2><a href="https://in.linkedin.com/in/jatin-bansal-b49b90109" class="link_deco"><p style="font-family:'Open Sans', sans-serif">https://in.linkedin.com/in/jatin-bansal-b49b90109</p></a>
+			</div>
+		</div>
+	</div>
+	<div class="section2">
+		<div class="skill_head">SKILLS</div>
+		<div class="container">
+			<div class="row_s">
+				<div class="skill_block_container">
+					<div class=" loader_1"></div>
+					<div class="loader_lang">C++</div>
+				</div>
+				<div class="skill_block_container">
+					<div class="loader_2"></div>
+					<div class="loader_lang">Java</div>
+				</div>
+				<div class="skill_block_container">
+					<div class="loader_3"></div>
+					<div class="loader_lang">Python</div>
+				</div>
+				<div class="skill_block_container">
+					<div class="loader_4"></div>
+					<div class="loader_lang">JavaScript</div>
+				</div>
+				<div class="skill_block_container">
+					<div class="loader_5"></div>
+					<div class="loader_lang">DS & Algo</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div> 
 	
-}
-.panel:hover{
-	transition: 1s;
-
-	transform: translateY(100px);
-	-webkit-transform: translateY(100px);
-	-webkit-transform:rotateY( -27deg );
-	transform: rotateY( -27deg );
-}
-.main_heading{
-	position: fixed;
-	top:50%;
-	left:50%;
-	margin-top: -100px;
-	margin-left: -200px;
-}
-.main_name{
-	font-size: 80px;
-	font-family: Abel,sans-serif;
-	color: white;
-}
-.sidepanel {
-  position: absolute;
-  width:300px;
-  height: 650px;
-  z-index: 0;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.side_in{
-	margin: 0px 0px 0px 0px;
-	background-color: black;	
-	width: 260px;
-	height: 650px;
-	color: white;
-}
-.m_pic{
-	height: 220px;
-	width: 180px;
-	margin: 50px 40px;
-}
-.details{
-	color: white;
-	padding-left: 20px;
-}
-.con_ic{
-	float: left;
-	margin: 0px 20px;
-	width: 260px;
-	height: 50px;
-}
-.fb_ic{
-	float: left;
-	margin: 0px 10px;
-}
-.section1{
-	height: 100%;
-	float: left;
-}
-.about_des{
-	font-size:30px;
-	text-align: justify;
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
 	
-	line-height: 150%;
-}
-.font_open{
-	font-family: 'Open Sans', sans-serif ;
-}
-.section2{
-	padding-top: 50px;
-	height: 100%;
-	width: 100%;
-	float: left;
-}
-#sl{
-	height: 100px;
-	width: 100px;
-}
-.pulse {
-	animation-name: pulse;
-	-webkit-animation-name:pulse;
-	animation-duration: 1.5s;
-	-webkit-animation-duration: 1.5s;
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
-}
-@keyframes pulse{
 
-0% {
-    transform: scale(0.9);
-    opacity: 0.7;
-}
-50% {
-    transform: scale(1);
-    opacity: 1;
-}
-100% {
-    transform: scale(0.9);
-    opacity: 0.7;
-}
-}
-.s1{
-	width: 150px;
-	height: 150px;
-	margin:10px;
-}
-.row_s{
-	width: 1000px;
-	margin:0px auto;
-}
-.col-md-3{
-	display: block;
-	background-color: white;
-	border-radius: 10px;
-	width: 170px;
-	height: 170px;
-	margin:40px;
-	float: left;
-}
-.section1_right{
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: rgba(255,255,255,.7);
-	border: 15px solid black;
-}
-
-.s2{
-	width: 200px;
-	height: 400px;
-}
-.footer{
-	background-image: url(footer-bg.png);
-	height: 100px;
-	width: 100%;
-	float:left;
-}
-.link{
-	text-decoration: none;
-	color: black;
-}
+</body>
+</html>
