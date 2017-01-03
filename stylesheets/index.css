@@ -276,9 +276,14 @@ ul.topnav li.icon {display: none;}
 	color: white;
 	font-size: 25px;
 }
+.hr1{
+	background-color: black;
+	height: 2px;
+	width: 50%;
+}
 .section1_right{
 	text-align: center;
-	background-color: white;
+	background-color: #fafafa;
 	
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -327,10 +332,15 @@ ul.topnav li.icon {display: none;}
 }
 
 .footer{
-	background-image: url(footer-bg.png);
-	height: 100px;
+	text-align: center;
+	height: 60px;
 	width: 100%;
 	float:left;
+	background-color: white;
+}
+.footer_container{
+	display: inline-block;
+	font-weight: 600;
 }
 .links{
 
@@ -476,3 +486,12 @@ ul.topnav li.icon {display: none;}
 }
 
 
+.direct{
+	height: 50px;
+	width: 50px;
+	border: 1px solid black;
+	border-radius: 50%;
+	display: block;
+	font-size: 35px;
+	transform: translateY(-35px);
+}
