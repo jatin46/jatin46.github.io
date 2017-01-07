@@ -43,7 +43,7 @@
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 
 	<div id="main" style="display: none;">
-		<div class="nav">
+		<div class="nav" id="nav">
 			<ul class="topnav" id="myTopnav">
 	  			<li><a href="#wrapper" onclick="openNav()">&#9776;</a></li>
 				<li><a href="#about" >About</a></li>
@@ -52,7 +52,7 @@
 	  			</li>
 			</ul>
 		</div>
-	<div class="wrapper">
+	<div class="wrapper" id="wrapper">
 		<div class="panel_wrapper">
 
 			<div class="panel">
@@ -104,8 +104,12 @@
 	
 	<div class="footer">
 		<div class="footer_container">
-			
-			<p>Developed By Jatin Bansal</p>
+			<a href="#nav" style="color: black; text-decoration: none;">
+				<div class="direct">
+					<i class="fa fa-angle-up" aria-hidden="true"></i>
+				</div>
+			</a>
+			<p style="margin-top: 0px;">Developed By Jatin Bansal</p>
 		</div>
 	</div>
 	</div>
