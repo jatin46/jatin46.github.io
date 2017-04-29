@@ -8,6 +8,31 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="javascripts/nav.js"></script>
 	<script type="text/javascript" src="javascripts/sidebar.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},150);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+	</script>
 </head>
 <body onload="myFunction()">
 
@@ -60,7 +85,7 @@
 		</div>
 	</div>
 	<div class="section1" id="about">
-		<div class="section1_right">
+		<div class="section1_right hideme">
 			<h1 class="aboutme_head">ABOUT ME</h1><hr class="hr1">
 			<h2 class="aboutme_head ab_l">Developer - Designer - Coder - Learner</h2>
 			<div class="aboutme">
@@ -72,7 +97,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section2">
+	<div class="section2 hideme">
 		<div class="skill_head">SKILLS</div>
 		<div class="container">
 			<div class="row_s">
