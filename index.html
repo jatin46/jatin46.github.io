@@ -4,35 +4,10 @@
 	<title>Jatin Bansal</title>
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="javascripts/nav.js"></script>
-	<script type="text/javascript" src="javascripts/sidebar.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},150);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
-	</script>
 </head>
 <body onload="myFunction()">
 
@@ -85,13 +60,13 @@
 		</div>
 	</div>
 	<div class="section1" id="about">
-		<div class="section1_right hideme">
-			<h1 class="aboutme_head">ABOUT ME</h1><hr class="hr1">
-			<h2 class="aboutme_head ab_l">Developer - Designer - Coder - Learner</h2>
-			<div class="aboutme">
+		<div class="section1_right">
+			<h1 class="aboutme_head fadeMe">ABOUT ME</h1><hr class="hr1">
+			<h2 class="aboutme_head ab_l fadeMe">Developer - Designer - Coder - Learner</h2>
+			<div class="aboutme fadeMe">
 				My name is Jatin Bansal and I'm a IT student at YMCAUST,Faridabad. I'm a developer,programmer and a designer. I like web development. I'm currently the Joint secretery of the photography and designing club of our college. I like competitive programming and learning new concepts.
 			</div>
-			<div class="links">
+			<div class="links fadeMe">
 				<h2>Github link:</h2><a href="https://github.com/jatin46" class="link_deco"><p style="font-family:'Open Sans', sans-serif">https://github.com/jatin46</p></a>
 				<h2>Linkedin link:</h2><a href="https://in.linkedin.com/in/jatin-bansal-b49b90109" class="link_deco"><p style="font-family:'Open Sans', sans-serif">https://in.linkedin.com/in/jatin-bansal-b49b90109</p></a>
 			</div>
@@ -101,23 +76,23 @@
 		<div class="skill_head">SKILLS</div>
 		<div class="container">
 			<div class="row_s">
-				<div class="skill_block_container">
+				<div class="skill_block_container fadeMeS">
 					<div class=" loader_1"></div>
 					<div class="loader_lang">C++</div>
 				</div>
-				<div class="skill_block_container">
-					<div class="loader_2"></div>
-					<div class="loader_lang">Java</div>
-				</div>
-				<div class="skill_block_container">
+				<div class="skill_block_container fadeMeS">
 					<div class="loader_3"></div>
 					<div class="loader_lang">Python</div>
 				</div>
-				<div class="skill_block_container">
+				<div class="skill_block_container fadeMeS">
+					<div class="loader_2"></div>
+					<div class="loader_lang">Java</div>
+				</div>
+				<div class="skill_block_container fadeMeS">
 					<div class="loader_4"></div>
 					<div class="loader_lang">JavaScript</div>
 				</div>
-				<div class="skill_block_container">
+				<div class="skill_block_container fadeMeS">
 					<div class="loader_5"></div>
 					<div class="loader_lang">DS & Algo</div>
 				</div>
@@ -139,6 +114,21 @@
 	</div>
 	</div>
 	
+	<script type="text/javascript" src="javascripts/sidebar.js"></script>
+	<script type="text/javascript" src="javascripts/viewportchecker.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+    $('.fadeMe').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 100
+       });
+     $('.fadeMeS').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceInLeft',
+        offset: 100
+       });
+  
 
+});
+	</script>
 </body>
 </html>
