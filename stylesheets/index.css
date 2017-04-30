@@ -1,12 +1,22 @@
 
 body {
-	background-color: black;
+	background-color: #fafafa;
 	height: 100%;
 	width: 100%;
 	margin:0px;
 	padding: 0px;
 	font-family: "Lato", sans-serif;
 }
+.fade{
+  font-size: 1.8em;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+.ddcl{
+  text-align: center;
+  padding: 50px;
+}
+
 /* The side navigation menu */
 #loader {
   position: absolute;
@@ -241,6 +251,7 @@ ul.topnav li.icon {display: none;}
 .section2{
 	padding:50px 0px;
 	text-align: center;
+  background-color: black;
 	height: 100%;
 	width: 100%;
 	float: left;
@@ -307,9 +318,10 @@ ul.topnav li.icon {display: none;}
 .section3{
 
 	width: 100%;
-	background-color: white;
-	padding: 10px;
+  background-color: #fafafa;
 	float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .row_s{
 	display: inline-block;
@@ -324,18 +336,13 @@ ul.topnav li.icon {display: none;}
 .container {
 	text-align: center;
 }
-.skill_block_container{
-	display: block;
-	margin:30px;
-	float: left;
-	
-}
+
 
 .footer{
 	text-align: center;
 	width: 100%;
 	float:left;
-	background-color: white;
+	background-color: black;
 }
 .footer_container{
 	display: inline-block;
@@ -486,25 +493,24 @@ ul.topnav li.icon {display: none;}
 }
 
 
-.direct{
-	height: 50px;
-	width: 50px;
-	background-color: white;
-	border-radius: 50%;
-	display: inline-block;
-	position: relative;
-	z-index: 9;
-	font-size: 35px;
-	transform: translateY(-35px);
-	box-shadow: 0px 5px 5px -2px #888888;
-}
-.direct:hover {
-	box-shadow: 0px 5px 10px -1px #888888;
-}
 
 .hidden{
      opacity:0;
 }
 .visible{
      opacity:1;
+}
+
+.project{
+    background-color: black;
+    padding: 10px;
+}
+.black{
+  color: black;
+}
+.white{
+  color:white;
+}
+.project:hover {
+  box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.58);
 }
