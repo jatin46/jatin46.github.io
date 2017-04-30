@@ -5,8 +5,11 @@
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/simple-grid.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="javascripts/nav.js"></script>
 </head>
 <body onload="myFunction()">
@@ -46,70 +49,108 @@
 		<div class="nav" id="nav">
 			<ul class="topnav" id="myTopnav">
 	  			<li><a href="#wrapper" onclick="openNav()">&#9776;</a></li>
-				<li><a href="#about" >About</a></li>
 				<li class="icon">
 				    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
 	  			</li>
+	  			<div style="float: right;">
+	  				<li>
+	  				<a href="#project">Projects</a>
+		  			</li>
+		  			<li>
+		  				<a href="#wrapper" onclick="openNav()">Contact</a>
+		  			</li>
+	  			</div>
 			</ul>
 		</div>
-	<div class="wrapper" id="wrapper">
-		<div class="panel_wrapper">
-
-			<div class="panel">
-			</div>	
+		<div class="container-fluid">
+		<div class="ddcl">
+			<h1 class="aboutme_head ab_l">Developer - Designer - Coder - Learner</h1>
 		</div>
-	</div>
-	<div class="section1" id="about">
-		<div class="section1_right">
-			<h1 class="aboutme_head fadeMe">ABOUT ME</h1><hr class="hr1">
-			<h2 class="aboutme_head ab_l fadeMe">Developer - Designer - Coder - Learner</h2>
-			<div class="aboutme fadeMe">
-				My name is Jatin Bansal and I'm a IT student at YMCAUST,Faridabad. I'm a developer,programmer and a designer. I like web development. I'm currently the Joint secretery of the photography and designing club of our college. I like competitive programming and learning new concepts.
-			</div>
-			<div class="links fadeMe">
-				<h2>Github link:</h2><a href="https://github.com/jatin46" class="link_deco"><p style="font-family:'Open Sans', sans-serif">https://github.com/jatin46</p></a>
-				<h2>Linkedin link:</h2><a href="https://in.linkedin.com/in/jatin-bansal-b49b90109" class="link_deco"><p style="font-family:'Open Sans', sans-serif">https://in.linkedin.com/in/jatin-bansal-b49b90109</p></a>
+			<div class="row main-section">
+				<div class="col-6" style="height: 100%;">
+					<div class="fade" >
+						
+					</div>
+				</div>
+				<div class="col-6" >
+					<img src="images/mypic.jpg" style=" width: 100%; height: 100%">
+				</div>
 			</div>
 		</div>
-	</div>
 	<div class="section2 hideme">
 		<div class="skill_head">SKILLS</div>
-		<div class="container">
-			<div class="row_s">
-				<div class="skill_block_container fadeMeS">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-2 fadeMeS">
 					<div class=" loader_1"></div>
 					<div class="loader_lang">C++</div>
 				</div>
-				<div class="skill_block_container fadeMeS">
+				<div class="col-2 fadeMeS">
 					<div class="loader_3"></div>
 					<div class="loader_lang">Python</div>
 				</div>
-				<div class="skill_block_container fadeMeS">
+				<div class="col-2 fadeMeS">
 					<div class="loader_2"></div>
 					<div class="loader_lang">Java</div>
 				</div>
-				<div class="skill_block_container fadeMeS">
+				<div class="col-2 fadeMeS">
 					<div class="loader_4"></div>
 					<div class="loader_lang">JavaScript</div>
 				</div>
-				<div class="skill_block_container fadeMeS">
+				<div class="col-2 fadeMeS">
 					<div class="loader_5"></div>
 					<div class="loader_lang">DS & Algo</div>
 				</div>
-				
+				<div class="col-1"></div>
 				
 			</div>
 		</div>
 	</div> 
 	
-	<div class="footer">
-		<div class="footer_container">
-			<a href="#nav" style="color: black; text-decoration: none;">
-				<div class="direct">
-					<i class="fa fa-angle-up" aria-hidden="true"></i>
+	<div class="section3" id="project">	
+		<div class="container">
+		<div class="skill_head black">PROJECTS</div>
+			<div class="row" style="margin-top: 20px;">
+				<div class="col-4">
+					<div class="project">
+						<div class="project-header">
+							<h4 class="white">Django, MySQL</h4>
+						</div>
+						<img src="images/project1.jpg" style="width: 100%; height: 90%;">
+						<h4 class="white">Social Networking</h4>
+						<p class="white">A website through which people can view and share the posts.</p>
+					</div>
 				</div>
-			</a>
-			<p style="margin-top: 0px;">Developed By Jatin Bansal</p>
+				<div class="col-4">
+					<div class="project">
+						<div class="project-header">
+							<h4 class="white">Pyhton</h4>
+						</div>
+						<img src="images/project2.jpg" style="width: 100%; height: 100%;">
+						<h4 class="white">News Reader</h4>
+						<p class="white">Get news as text by the use of web scrapper and then convert this text into voice and play the sound.</p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="project">
+						<div class="project-header">
+							<h4 class="white">JAVA</h4>
+						</div>
+						<img src="images/project3.jpg" style="width: 100%; height: 100%;">
+						<h4 class="white">Billing Software</h4>
+						<p class="white">
+							It store bills in the database so that one can retrieve information of the desired bill.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<p class="white">Developed By Jatin Bansal</p>
 		</div>
 	</div>
 	</div>
@@ -118,6 +159,26 @@
 	<script type="text/javascript" src="javascripts/viewportchecker.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+			
+	    var string = " My name is Jatin Bansal and I'm a IT undergraduate at YMCAUST,Faridabad. I'm a developer,programmer and a designer. I love web development. I like programming and learning new concepts.";
+	    var q = jQuery.map(string.split(''), function (letter) {
+	        return $('<span>' + letter + '</span>');
+	    });
+
+	    var dest = $('.fade');
+
+	    var c = 0;
+	    var i = setInterval(function () {
+	        q[c].appendTo(dest).hide().fadeIn(100);
+	        c += 1;
+	        if (c >= q.length) clearInterval(i);
+	    }, 70);
+
+
+			$(".fade").hide().each(function(i) {
+			  $(this).delay(i*1500).effect("bounce",{direction:'right', times:1}, 500);
+			});
+
     $('.fadeMe').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn',
         offset: 100
