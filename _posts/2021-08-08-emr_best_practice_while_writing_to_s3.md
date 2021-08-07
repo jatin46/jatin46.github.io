@@ -4,6 +4,7 @@ title: EMR best practice while writing output to S3
 subtitle: Learned the hard way
 categories: AWS
 tags: [EMR, Spark, S3, BestPractices]
+comments: true
 ---
 
 We should always use Spark's overwrite mode while writing to s3 unless your use case does not support it.
