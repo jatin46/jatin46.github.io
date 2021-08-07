@@ -19,6 +19,16 @@ html[data-theme="dark"]  {
         transition: 0s;
       }
     }
+
+    subscribe.mc_embed_signup{
+      .mc_embed_signup_heading {
+        border-top: solid 1px #2f2f2f !important;
+        transition: 0s;
+      }
+      #mc-embedded-subscribe {
+        background-color: #6C918A;
+      }
+    }
   }
 
   body {
@@ -86,6 +96,19 @@ html[data-theme="dark"]  {
   .site-footer {
     color: #fff;
     background-color: #000;
+  }
+
+  .mc_embed_signup_heading {
+    color: #fff;
+  }
+
+  .mc_embed_signup {
+    background-color: #fff;
+    clear:left;
+  }
+
+  #mc-embedded-subscribe {
+    background-color: #6C918A;
   }
 
   .left-vsplit:before {
