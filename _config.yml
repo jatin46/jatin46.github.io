@@ -43,7 +43,7 @@ author: Jatin Bansal
 copyright: "Copyright (cleft) 2020-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Short tech notes with real world learnings, best practices, problems.
+  A place full of best practices and real world learnings in the world of software engineering.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.stechienotes.com" # the base hostname & protocol for your site, e.g. http://example.com
